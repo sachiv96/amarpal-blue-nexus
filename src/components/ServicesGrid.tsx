@@ -246,24 +246,26 @@ const ServicesGrid = () => {
         </motion.div>
 
         <Tabs defaultValue="whatsapp" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 glass-card mb-8">
-            <TabsTrigger value="whatsapp" className="flex items-center gap-2">
-              <Smartphone className="w-4 h-4" />
-              WhatsApp
-            </TabsTrigger>
-            <TabsTrigger value="web" className="flex items-center gap-2">
-              <Globe className="w-4 h-4" />
-              Websites
-            </TabsTrigger>
-            <TabsTrigger value="music" className="flex items-center gap-2">
-              <Music className="w-4 h-4" />
-              Music
-            </TabsTrigger>
-            <TabsTrigger value="ott" className="flex items-center gap-2">
-              <Tv className="w-4 h-4" />
-              OTT Streaming
-            </TabsTrigger>
-          </TabsList>
+          <div className="overflow-x-auto mb-8">
+            <TabsList className="grid grid-cols-4 glass-card min-w-max w-full">
+              <TabsTrigger value="whatsapp" className="flex items-center gap-2 whitespace-nowrap px-3">
+                <Smartphone className="w-4 h-4" />
+                WhatsApp
+              </TabsTrigger>
+              <TabsTrigger value="web" className="flex items-center gap-2 whitespace-nowrap px-3">
+                <Globe className="w-4 h-4" />
+                Websites
+              </TabsTrigger>
+              <TabsTrigger value="music" className="flex items-center gap-2 whitespace-nowrap px-3">
+                <Music className="w-4 h-4" />
+                Music
+              </TabsTrigger>
+              <TabsTrigger value="ott" className="flex items-center gap-2 whitespace-nowrap px-3">
+                <Tv className="w-4 h-4" />
+                OTT Streaming
+              </TabsTrigger>
+            </TabsList>
+          </div>
 
           <TabsContent value="whatsapp">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
