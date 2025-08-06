@@ -4,17 +4,28 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
-  MessageCircle, 
-  Globe, 
-  Music, 
-  Tv, 
   ShoppingCart,
   Smartphone,
-  Headphones,
-  Play,
+  Globe,
+  Music,
+  Tv,
   Crown,
   Zap
 } from "lucide-react";
+
+// Import service logos
+import whatsappLogo from "@/assets/logos/whatsapp.png";
+import spotifyLogo from "@/assets/logos/spotify.png";
+import netflixLogo from "@/assets/logos/netflix.png";
+import appleMusicLogo from "@/assets/logos/apple-music.png";
+import youtubeLogo from "@/assets/logos/youtube.png";
+import primeVideoLogo from "@/assets/logos/prime-video.png";
+import webDevLogo from "@/assets/logos/web-dev.png";
+import tidalLogo from "@/assets/logos/tidal.png";
+import crunchyrollLogo from "@/assets/logos/crunchyroll.png";
+import huluLogo from "@/assets/logos/hulu.png";
+import genericOttLogo from "@/assets/logos/generic-ott.png";
+import genericMusicLogo from "@/assets/logos/generic-music.png";
 
 interface Service {
   name: string;
@@ -37,14 +48,14 @@ const ServicesGrid = () => {
       name: "WhatsApp Unban Service",
       description: "Get your banned WhatsApp account restored quickly and safely",
       price: "Contact for pricing",
-      icon: <MessageCircle className="w-6 h-6" />,
+      icon: <img src={whatsappLogo} alt="WhatsApp" className="w-6 h-6" />,
       popular: true
     },
     {
       name: "WhatsApp Marketing",
       description: "Boost your business with professional WhatsApp marketing solutions",
       price: "Contact for pricing",
-      icon: <Zap className="w-6 h-6" />
+      icon: <img src={whatsappLogo} alt="WhatsApp" className="w-6 h-6" />
     }
   ];
 
@@ -53,7 +64,7 @@ const ServicesGrid = () => {
       name: "Custom Website Development",
       description: "Professional, responsive websites tailored to your business needs",
       price: "Starting ₹5,999",
-      icon: <Globe className="w-6 h-6" />,
+      icon: <img src={webDevLogo} alt="Web Development" className="w-6 h-6" />,
       popular: true
     }
   ];
@@ -63,50 +74,50 @@ const ServicesGrid = () => {
       name: "Apple Music (1 Year)",
       description: "Premium Apple Music subscription with full access",
       price: "₹399",
-      icon: <Music className="w-6 h-6" />,
+      icon: <img src={appleMusicLogo} alt="Apple Music" className="w-6 h-6" />,
       popular: true
     },
     {
       name: "Spotify Premium (1M)",
       description: "Ad-free music streaming with offline downloads",
       price: "Contact for pricing",
-      icon: <Headphones className="w-6 h-6" />
+      icon: <img src={spotifyLogo} alt="Spotify" className="w-6 h-6" />
     },
     {
       name: "Spotify Premium (2M/3M/1Y)",
       description: "Extended Spotify Premium subscriptions",
       price: "Contact for pricing",
-      icon: <Headphones className="w-6 h-6" />
+      icon: <img src={spotifyLogo} alt="Spotify" className="w-6 h-6" />
     },
     {
       name: "YouTube Premium (Individual)",
       description: "Ad-free YouTube with background play and downloads",
       price: "Contact for pricing",
-      icon: <Play className="w-6 h-6" />
+      icon: <img src={youtubeLogo} alt="YouTube" className="w-6 h-6" />
     },
     {
       name: "YouTube Premium (Family)",
       description: "YouTube Premium for up to 6 family members",
       price: "Contact for pricing",
-      icon: <Play className="w-6 h-6" />
+      icon: <img src={youtubeLogo} alt="YouTube" className="w-6 h-6" />
     },
     {
       name: "Qobuz Studio",
       description: "High-resolution music streaming service",
       price: "Contact for pricing",
-      icon: <Music className="w-6 h-6" />
+      icon: <img src={genericMusicLogo} alt="Qobuz" className="w-6 h-6" />
     },
     {
       name: "Epidemic Sound Commercial",
       description: "Royalty-free music for commercial use",
       price: "Contact for pricing",
-      icon: <Music className="w-6 h-6" />
+      icon: <img src={genericMusicLogo} alt="Epidemic Sound" className="w-6 h-6" />
     },
     {
       name: "Tidal Premium",
       description: "High-fidelity music streaming with exclusive content",
       price: "Contact for pricing",
-      icon: <Music className="w-6 h-6" />
+      icon: <img src={tidalLogo} alt="Tidal" className="w-6 h-6" />
     }
   ];
 
@@ -115,62 +126,62 @@ const ServicesGrid = () => {
       name: "Netflix Premium",
       description: "4K Ultra HD streaming with multiple screens",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />,
+      icon: <img src={netflixLogo} alt="Netflix" className="w-6 h-6" />,
       popular: true
     },
     {
       name: "Amazon Prime Video",
       description: "Unlimited streaming with Prime benefits",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={primeVideoLogo} alt="Prime Video" className="w-6 h-6" />
     },
     {
       name: "Crunchyroll",
       description: "Premium anime streaming service",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={crunchyrollLogo} alt="Crunchyroll" className="w-6 h-6" />
     },
     {
       name: "Hulu NoAds",
       description: "Ad-free streaming with premium content",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={huluLogo} alt="Hulu" className="w-6 h-6" />
     },
     {
       name: "Sony LIV",
       description: "Premium Indian content and sports streaming",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={genericOttLogo} alt="Sony LIV" className="w-6 h-6" />
     },
     {
       name: "Zee5",
       description: "Premium Indian entertainment streaming",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={genericOttLogo} alt="Zee5" className="w-6 h-6" />
     },
     {
       name: "Alt Balaji",
       description: "Premium Indian web series and shows",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={genericOttLogo} alt="Alt Balaji" className="w-6 h-6" />
     },
     {
       name: "Hoichoi",
       description: "Premium Bengali content streaming",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={genericOttLogo} alt="Hoichoi" className="w-6 h-6" />
     },
     {
       name: "Jio Hotstar Super",
       description: "Premium sports and entertainment content",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={genericOttLogo} alt="Jio Hotstar" className="w-6 h-6" />
     },
     {
       name: "Ullu Premium",
       description: "Premium adult entertainment content",
       price: "Contact for pricing",
-      icon: <Tv className="w-6 h-6" />
+      icon: <img src={genericOttLogo} alt="Ullu" className="w-6 h-6" />
     }
   ];
 
